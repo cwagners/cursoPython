@@ -9,3 +9,19 @@ def contaLetras(fra):
 
 frase = input("Digite uma frase:\n")
 contaLetras(frase)
+
+
+numeros = [1,4,6,89,77,9, 13, 22, 29, 37, 30]
+impar = []
+par = []
+def parImpar(*args):
+    for i in numeros:
+        if i % 2 == 0:
+            par.append(i)
+        else:
+            impar.append(i)
+    print(numeros)
+    print(impar)
+    print(par)
+ 
+parImpar(numeros)               
