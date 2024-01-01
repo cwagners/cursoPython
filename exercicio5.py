@@ -1,21 +1,11 @@
 def contaLetras(fra):
-    countUpper, countLowwer, i = 0, 0, 0
-    while ( i <= len(fra)):
-        if fra[i] == " ":
-            i += 1
-            continue
-            
-        elif fra[i].isUpper():
+    countUpper, countLowwer = 0, 0
+    for x in fra:        
+        if x.isupper():
             countUpper += 1
-            i += 1
-        elif fra[i].isLower():
-            countLowwer += 1    
-            i += 1
-    print(f"total de letras maiusculas: {countUpper} e minusculas: {countLowwer}")
-
-
-
-
+        elif x.islower():
+            countLowwer += 1       
+    print(f"total de letras maiusculas: {countUpper} e minusculas: {countLowwer} da frase {len(frase)}")
 
 frase = input("Digite uma frase:\n")
 contaLetras(frase)
